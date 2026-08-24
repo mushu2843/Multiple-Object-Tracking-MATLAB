@@ -1,20 +1,14 @@
-# Multiple-Object-Tracking-MATLAB
+# Multiple Object Tracking using MATLAB
 MATLAB-based multiple vehicle detection and tracking using ACF and Kalman filtering for ADAS applications.
 
-# Multiple Object Tracking using MATLAB
-
 ## Overview
-
 This project implements multiple vehicle detection and motion-based tracking using MATLAB.
-
 The system detects vehicles in a highway video using a pretrained Aggregate Channel Features (ACF) vehicle detector and tracks the detected vehicles across consecutive video frames using a multi-object tracker and Kalman filter.
 
 ## Objective
-
 The main objective is to understand how multiple moving vehicles can be detected, identified, and tracked in a video sequence.
 
 ## Technologies Used
-
 - MATLAB
 - Computer Vision Toolbox
 - ACF Vehicle Detector
@@ -38,7 +32,8 @@ Multi-Object Tracker
 ↓
 Track IDs
 
-## Key Concepts
+
+## Key Concepts:
 
 ### Vehicle Detection
 A pretrained ACF vehicle detector identifies vehicles in each frame.
@@ -86,3 +81,6 @@ The video is not included in this repository because it is provided with MATLAB/
 ## Learning Outcome
 
 This project demonstrates the complete basic workflow of motion-based multiple object tracking, from vehicle detection to Kalman-filter-based motion prediction and track management.
+
+## Tracking_Using_JPDA
+JPDA (Joint Probabilistic Data Association) is used to track multiple moving objects when sensor measurements are noisy or mixed with false alarms (clutter). Instead of picking just one measurement for a track, JPDA calculates the probability for every nearby measurement and blends them together.
